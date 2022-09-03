@@ -1,0 +1,76 @@
+body  {
+    min-height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration:none;
+    color: black;
+    font-family: 'broadway';
+    font-size: 30px;
+}
+.boton {
+    width: 150px;
+    height: 50px;
+    border: 1px solid orangered;
+    background-color:orangered;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.arriba {
+    width: 10px;
+    height: 1px;
+    border:1px solid blueviolet;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    transition: .5s;
+}
+.abajo {
+    width: 10px;
+    height: 1px;
+    border:1px solid blueviolet;
+    position:absolute;
+    bottom: -2px;
+    right: -5px;    
+    transition: 0.5s;
+}
+.izquierda {
+    width: 1px;
+    height: 10px;
+    border:1px solid blueviolet;
+    position:absolute;
+    bottom: -2px;
+    left: -2px;    
+    transition: 0.5s;
+}
+.derecha {
+    width: 1px;
+    height: 10px;
+    border:1px solid blueviolet;
+    position:absolute;
+    top: -2px;
+    right: -2px;    
+    transition: 0.5s;
+}
+.boton:hover .abajo {
+    width: 105%;
+    background-color:blueviolet;   
+}
+.boton:hover .arriba {
+    width: 105%;
+    background-color: blueviolet;    
+}
+.boton:hover .izquierda {
+    height: 105%;
+    background-color: blueviolet;
+}
+.boton:hover .derecha {
+    height: 105%;
+    background-color: blueviolet;    
+}
+
+
